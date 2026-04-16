@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>ANIMACIONES CSS - ANIMATION</title>
+    <style>
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(16, 185, 44);
+            text-align: center;
+
+            animation-name: titulo; /*titulo para la animacion*/
+            animation-duration: 3s; /*duracion de la animacion q facil*/
+            animation-iteration-count: 1; /*cant. de veces q se realiza la animacion*/
+            animation-fill-mode: forwards; /*indicas cual es el ultimo estado que se queda*/
+        }
+        @keyframes titulo{
+            from{
+                color: rgb(155, 17, 0);
+            }
+            to{
+                color: rgb(2, 253, 1);
+            }
+            
+        }
+
+        p{
+            text-align: center;
+            font-family: "century gothic";
+            font-weight: bold;
+            animation-name: texto;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 3s;
+        }
+
+        @keyframes texto{
+            from{
+                color:rgba(0, 0, 0, 0)
+            }
+            to{
+                color:rgba(0, 0, 0, 1)
+
+            }
+
+        }
+
+        img{
+            height: 200px;
+            width: 200px;
+            display: block;/*centrar la imagen*/
+            margin: auto; /*centrar imagen*/
+            opacity: 0;
+
+            animation: imagen 3s 4s 1 forwards;
+        }
+
+        @keyframes imagen{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>  
+    <h1>PROMOCION 2026 - CI</h1>
+    <P>IESTP MANUEL SEOANE CORRALES</P>
+    <img src="img/logo.png">
+    
+</body>
+</html>
